@@ -83,3 +83,17 @@ node tools/test.js
 - Renderer: WebGL 1, satu shader untuk semua kotak statis (1 draw call), shader billboard untuk partikel, shader flat untuk lava & bayangan.
 - Fisika: AABB, langkah tetap 120 Hz, coyote time, jump buffer, dan platform bergerak yang ikut membawa pemain.
 - Tidak ada dependency eksternal — sengaja, supaya bisa dibuka dari `file://` tanpa server.
+
+## Update & deploy
+
+Situs ini di-host di GitHub Pages dari branch `main` (root). Setelah mengubah file:
+
+```bash
+git add .
+git commit -m "update level"
+git push
+```
+
+GitHub akan build ulang otomatis dalam ±30 detik, lalu perubahan langsung tampil di
+https://aruminajwa.github.io/skyhop/
+
